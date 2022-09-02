@@ -1,0 +1,433 @@
+@import url(./colors.css);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  color: var(--body-font-color);
+  font-family: var(--body-font);
+  letter-spacing: 1.5px;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  margin: 32px 0px 42px 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1225px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav {
+  margin: 32px 0px 0px 0px;
+}
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  margin-right: 25px;
+}
+
+.nav-list-item a {
+  transition: 0.5s;
+}
+
+.nav-list-item a:hover {
+  color: var(--first-color);
+  font-weight: 700;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.nav-list-item:last-of-type {
+  margin-right: 0;
+}
+
+.nav-logo img {
+  width: 150px;
+  height: 50px;
+}
+
+.nav .ham,
+.nav .close {
+  display: none;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.hero-elements {
+  display: flex;
+  align-items: center;
+}
+
+.hero-photo img {
+  width: 500px;
+  height: auto;
+}
+
+.hero-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-greetings {
+  flex: 1;
+}
+
+.heading {
+  font-family: var(--heading-font);
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: var(--first-color);
+}
+
+.who-elements {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px 20px;
+  border-radius: 32px;
+  background-color: white;
+}
+
+.who-question button {
+  padding: 20px;
+  color: white;
+  background-color: var(--first-color);
+  border: none;
+  border-radius: 32px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dark .who-elements {
+  background-color: var(--darkgrey);
+  box-shadow: rgba(76, 76, 76, 0.2) 0px 8px 24px;
+}
+
+.who-answer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-question {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-img img {
+  width: 320px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-list>div {
+  margin: 16px;
+}
+
+.project-title .heading {
+  font-size: 28px;
+  margin-bottom: -5px;
+}
+
+.project-description .heading {
+  font-size: 18px;
+  color: var(--third-color);
+}
+
+.project-text {
+  width: 100%;
+}
+
+.project {
+  border-radius: 32px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dark .project {
+  box-shadow: rgba(76, 76, 76, 0.2) 0px 8px 24px;
+}
+
+.project-made-with .heading {
+  font-size: 12px;
+  color: var(--second-color);
+}
+
+.connect-elements {
+  display: flex;
+}
+
+.connect-text {
+  flex: 1;
+}
+
+.connect-form {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.connect-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.connect-form label {
+  font-family: var(--heading-font);
+  color: var(--third-color);
+}
+
+.connect-form input {
+  width: 100%;
+  height: 25px;
+  border: none;
+  border-radius: 32px;
+  padding: 20px;
+}
+
+.connect-form textarea {
+  border: none;
+  border-radius: 32px;
+  padding: 20px;
+}
+
+.connect-form button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 32px;
+  padding: 10px;
+  background-color: var(--second-color);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.connect-form button:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.5s;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.dark-toggle {
+  position: fixed;
+  right: 50px;
+  top: 100px;
+  z-index: 100;
+}
+
+.switches {
+  background-color: wheat;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light-switch {
+  transition: 0.5s;
+  padding-right: 12px;
+  color: var(--third-color);
+}
+
+.light-switch:hover {
+  font-size: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.dark-switch {
+  transition: 0.5s;
+}
+
+.dark-switch:hover {
+  font-size: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+  color: var(--third-color);
+}
+
+.dark .light-switch {
+  color: var(--body-font-color);
+}
+
+.dark .dark-switch {
+  color: var(--third-color);
+}
+
+.dark {
+  background-color: var(--darkgrey);
+  color: white;
+}
+
+.dark .switches {
+  border: 2px solid white;
+}
+
+.dark .logo-dark {
+  display: block;
+}
+
+.dark .logo-light {
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .nav .ham,
+  .nav .close {
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 560px;
+    height: 100%;
+    background-color: white;
+    font-size: 29px;
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 16px;
+    transition: 0.5s;
+    box-shadow: 8px 10px 43px -15px rgba(0, 0, 0, 0.41);
+  }
+
+  .dark .nav-list {
+    background-color: var(--darkgrey);
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .nav-list-item {
+    margin-bottom: 35px;
+  }
+
+  .nav-list-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .first-item {
+    margin-top: 50px;
+  }
+
+  .close {
+    position: absolute;
+    top: 40px;
+    right: 22px;
+  }
+
+  .hero-elements {
+    flex-direction: column;
+  }
+
+  .hero-photo img {
+    width: 400px;
+  }
+
+  .hero-greetings {
+    text-align: center;
+  }
+
+  .who-elements {
+    flex-direction: column-reverse;
+  }
+
+  .who-answer {
+    text-align: center;
+  }
+
+  .project img {
+    width: 250px;
+  }
+
+  .project-description .heading {
+    font-size: 12px;
+  }
+
+  .connect-elements {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+
+}
+
+@media (max-width: 420px) {
+  .project img {
+    width: 200px;
+  }
+}
