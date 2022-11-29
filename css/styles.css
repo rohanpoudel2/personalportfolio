@@ -155,8 +155,12 @@ section {
   align-content: center;
 }
 
+.project {
+  width: 360px;
+}
+
 .project-img img {
-  width: 320px;
+  width: 100%;
   border-radius: 32px;
   object-fit: cover;
 }
